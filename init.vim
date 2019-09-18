@@ -37,6 +37,11 @@ let g:airline_powerline_fonts = 1
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" dtrace syntax
+Plug 'vim-scripts/dtrace-syntax-file'
+autocmd BufNewFile,BufRead *.d setf dtrace
 
 call plug#end()
 
