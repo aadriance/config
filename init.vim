@@ -25,3 +25,18 @@ set shiftwidth=4
 set smartindent	
 set smarttab	
 set softtabstop=4	
+
+" Plugin loading world
+call plug#begin('~\AppData\Local\nvim\plugged')
+
+" Airline visual goodness
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='dark'
+let g:airline_powerline_fonts = 1
+
+" Git
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
+
