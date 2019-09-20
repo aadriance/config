@@ -21,10 +21,12 @@ set ignorecase
 set incsearch	
  
 set autoindent	
-set shiftwidth=4	
-set smartindent	
-set smarttab	
-set softtabstop=4	
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 
 " Plugin loading world
 call plug#begin('~\AppData\Local\nvim\plugged')
