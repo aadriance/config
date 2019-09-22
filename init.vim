@@ -34,8 +34,6 @@ call plug#begin('~\AppData\Local\nvim\plugged')
 " Airline visual goodness
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='dark'
-let g:airline_powerline_fonts = 1
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -43,7 +41,18 @@ Plug 'airblade/vim-gitgutter'
 
 " dtrace syntax
 Plug 'vim-scripts/dtrace-syntax-file'
-autocmd BufNewFile,BufRead *.d setf dtrace
+
+" Theme goodness
+Plug 'liuchengxu/space-vim-dark'
 
 call plug#end()
 
+"Plug in options
+
+"airline
+let g:airline_theme='dark'
+let g:airline_powerline_fonts = 1
+"dtrace syntax
+autocmd BufNewFile,BufRead *.d setf dtrace
+"theme
+colo space-vim-dark
