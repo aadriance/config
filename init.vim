@@ -42,9 +42,6 @@ Plug 'airblade/vim-gitgutter'
 " dtrace syntax
 Plug 'vim-scripts/dtrace-syntax-file'
 
-" Theme goodness
-Plug 'liuchengxu/space-vim-dark'
-
 call plug#end()
 
 "Plug in options
@@ -52,7 +49,9 @@ call plug#end()
 "airline
 let g:airline_theme='dark'
 let g:airline_powerline_fonts = 1
+
 "dtrace syntax
 autocmd BufNewFile,BufRead *.d setf dtrace
-"theme
-colo space-vim-dark
+
+"font
+set guifont=Cascadia\ Code\ Pl
